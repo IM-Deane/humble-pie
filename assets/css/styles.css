@@ -1,0 +1,389 @@
+/* Course 960px center-page framework */
+body {
+	background-color: azure;
+	font-family: "Cantarell", sans-serif;
+}
+
+/* This is for our wrapper <div>. */
+.container {
+	width: 960px;
+	margin: 0 auto;
+	line-height: 1.2;
+	font-size: 100%;
+}
+
+/* Student Styling */
+
+/* Site theme variables */
+:root {
+	--transparent-bg: rgba(255, 239, 239, 0.702);
+	--primary-clr: #f15156;
+}
+
+/* Typography */
+
+h1,
+h2,
+a {
+	font-family: "Fjalla One";
+}
+h2 {
+	color: var(--primary-clr);
+	font-size: 48px;
+}
+
+/* SITE WIDE STYLING */
+
+/* Hide the nav displays */
+.hidden {
+	visibility: hidden;
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Footer */
+footer {
+	flex: 1 1 280px;
+	background-color: var(--transparent-bg);
+	padding: 48px;
+	text-align: center;
+	font-size: 14px;
+}
+
+footer .row {
+	padding-bottom: 30px;
+}
+
+/* Social links */
+.social a {
+	padding: 12px;
+}
+
+footer h4 {
+	font-size: 24px;
+	margin-bottom: 30px;
+	font-family: "Cantarell", sans-serif;
+}
+
+/* Navigation */
+
+nav {
+	background: var(--transparent-bg);
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	/* For accessibility (ensure the hidden class elements get gone) */
+	max-width: 64rem;
+}
+
+/* Company logo box */
+.nav-brand {
+	flex: 1 1 25%;
+	padding: 10px 50px;
+}
+
+/* Container for nav links */
+.nav-items {
+	flex: 1 1 50%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+/* Navigation links */
+.nav-links {
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
+	padding: 0 50px;
+}
+
+.nav-links:hover,
+.nav-links:focus {
+	text-decoration: underline;
+}
+
+/* Call-to-action links */
+.cta {
+	padding: 20px 30px;
+	font-size: 30px;
+	color: #fff;
+	background-color: var(--primary-clr);
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.cta:hover,
+.cta:focus {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* HOME PAGE (index) STYLING */
+
+/* Landing Hero section */
+.hero {
+	background-color: #fff;
+	background-image: url("../img/delicious-pastie.jpg");
+	background-size: cover;
+	margin-bottom: 95px;
+	width: 960px;
+	padding-bottom: 250px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Container for landing hero content  */
+.hero-content {
+	padding: 50px 80px;
+	margin: 150px 155px 0;
+	background: var(--transparent-bg);
+	border: 1px solid rgb(55, 52, 47);
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.hero-content h2 {
+	padding: 20px 0 45px 0;
+	/* padding-bottom: 45px; */
+	font-size: 72px;
+	color: var(--primary-clr);
+}
+
+.hero-content p {
+	font-size: 24px;
+	padding-bottom: 30px;
+}
+
+/* call-to-action wrapper */
+.hero-content div {
+	padding-top: 30px;
+	text-align: center;
+}
+
+/* About section */
+#about {
+	background: url("../img/open-pasties.png") no-repeat right;
+	background-color: var(--transparent-bg);
+	margin-bottom: 95px;
+	display: flex;
+}
+
+/* Wrapper col */
+#about .col {
+	text-align: justify;
+	margin-right: 55%;
+	padding-left: 50px;
+}
+
+/* All elements within the about col */
+#about .col * {
+	margin-bottom: 30px;
+}
+
+/* About title */
+#about h2 {
+	padding-top: 20px;
+}
+
+/* Last paragraph of About section */
+#about .col :last-child {
+	padding-bottom: 40px;
+}
+
+/* Location Section */
+#findUs {
+	/* Self props */
+	background-image: url("../img/flour-hands-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	flex: 1;
+	margin-bottom: 95px;
+	padding: 50px;
+	/* Child content */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#findUs .col {
+	text-align: center;
+	margin: 25px;
+}
+
+#findUs h2 {
+	margin-bottom: 50px;
+}
+
+#findUs h3 {
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+
+#findUs p {
+	margin-bottom: 35px;
+	text-align: justify;
+}
+
+#findUs ul :first-child {
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+#findUs ul :last-child {
+	margin-top: 30px;
+}
+
+#findUs li {
+	width: 220px;
+	text-align: center;
+}
+
+/* Location call-to-action link */
+#findUs a {
+	color: #e79294;
+	font-family: "Cantarell", sans-serif;
+}
+
+/* CONTACT PAGE STYLES */
+
+/* New hero image content */
+.contact-hero {
+	background-color: #fff;
+	background: url("../img/humble-foodtruck.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 100px;
+}
+
+.contact-content {
+	text-align: justify;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 200px;
+	padding: 60px 60px 100px;
+	background: var(--transparent-bg);
+	border: 1px solid black;
+}
+
+.contact-content h2 {
+	text-align: center;
+	font-size: 72px;
+}
+
+.contact-content p {
+	font-size: 16px;
+	padding: 30px 0;
+}
+
+.contact-content p:first-of-type {
+	font-size: 24px;
+}
+
+ul {
+	padding-top: 30px;
+}
+
+ul li:first-child {
+	font-weight: bold;
+}
+
+/* Section divider */
+hr {
+	width: 100%;
+	border: 1px solid rgb(45, 40, 36);
+	margin: 50px 0;
+}
+
+/* Form Section */
+
+form {
+	flex: 1;
+	text-align: center;
+}
+
+fieldset {
+	width: 100%;
+	display: flex;
+	text-align: left;
+	justify-content: flex-start;
+}
+
+form fieldset:last-of-type {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+/*  */
+label {
+	width: 100%;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+input,
+textarea {
+	border: 1px solid black;
+	background: var(--transparent-bg);
+	width: 100%;
+	padding: 15px 5px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+/* Checkbox input */
+#no-bots {
+	padding-top: 10px;
+	margin-right: 15px;
+	width: 20px;
+	height: 20px;
+}
+
+/* Robot label */
+#no-bots ~ label {
+	font-size: 18px;
+}
+
+/* Message input */
+#msg {
+	margin-bottom: 30px;
+	height: 100px;
+	resize: none;
+	padding: 5px;
+}
+
+/* Form button */
+.btn {
+	border: none;
+	font-size: 24px;
+	padding: 10px 65px;
+}
