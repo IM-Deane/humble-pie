@@ -5,6 +5,7 @@ const { urlencoded } = require("body-parser");
 // Routes
 const homeRoute = require("./server/routes");
 const contactRoute = require("./server/routes/contact");
+const errorPage = require("./server/routes/error");
 
 // Body parser
 app.use(express.json());
@@ -17,6 +18,8 @@ app.use("/humble-pie-menu.pdf", express.static("humble-pie-menu.pdf"));
 // Middleware
 app.use(homeRoute);
 app.use(contactRoute);
+// Handle 404 errors
+app.use(errorPage);
 
 // Listen to requests on port 3000
 app.listen(3000);

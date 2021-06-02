@@ -4,11 +4,11 @@
 		<meta charset="UTF-8" />
 		<title>Contact Us - Humble Pie Co.</title>
 		<!-- Favicon -->
-		<link
+		<!-- <link
 			rel="shortcut icon"
 			type="image/png"
 			href="./img/humble-pie-logo.png"
-		/>
+		/> -->
 		<!-- Stylesheets -->
 		<link rel="stylesheet" type="text/css" href="/css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="/css/styles.css" />
@@ -87,15 +87,27 @@
 					<form action="#" method="POST">
 						<fieldset class="col">
 							<label for="name">Name:</label>
-							<input type="text" name="name" id="name" required />
+							<input
+								type="text"
+								name="name"
+								id="name"
+								maxlength="20"
+								required
+							/>
 							<label for="email">Email:</label>
-							<input type="email" name="email" id="email" required />
+							<input
+								type="email"
+								name="email"
+								id="email"
+								maxlength="30"
+								required
+							/>
 							<label for="msg">Message:</label>
-							<textarea name="msg" id="msg" required></textarea>
+							<textarea name="msg" id="msg" maxlength="200" required></textarea>
 						</fieldset>
 						<fieldset class="col">
-							<input type="checkbox" name="no-bots" id="no-bots" />
-							<label for="no-bots"
+							<input type="checkbox" name="noBots" id="noBots" required />
+							<label for="noBots"
 								>I have some serious existential reservations as to what the
 								human condition really is, so … that prolly means I'm not a
 								robot.</label
