@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const { urlencoded } = require("body-parser");
+const port = 3000 || 5500;
 
 // Routes
 const homeRoute = require("./server/routes");
@@ -21,5 +22,7 @@ app.use(contactRoute);
 // Handle 404 errors
 app.use(errorPage);
 
-// Listen to requests on port 3000
-app.listen(3000);
+app.listen(port, (err) => {
+	if (err) console.error("Error encounter when starting server.", err);
+	console.log(`Server listening at http://localhost:${port}`);
+});
