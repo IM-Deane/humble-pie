@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const { urlencoded } = require("body-parser");
-const port = 3000 || 5500;
+const port = process.env.PORT || 3000;
 
 // Routes
 const homeRoute = require("./server/routes");
