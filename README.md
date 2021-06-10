@@ -2,7 +2,9 @@
 
 **Current Version: 1.0**
 
-# Note: The server will attempt to run the app on ports 3000 or 5000. To run the project locally, please try visiting http://localhost:3000 after starting the server.
+Currently hosted at: https://humble-pie.herokuapp.com/
+
+# Note: If no environmental PORT is supplied, the server will attempt to run the app on port 3000. For those that are new, to run the project locally, please try visiting http://localhost:3000 after starting the server.
 
 # Description:
 
