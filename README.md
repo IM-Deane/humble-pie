@@ -2,6 +2,8 @@
 
 **Current Version: 1.0**
 
+# Note: The server will attempt to run the app on ports 3000 or 5000. To run the project locally, please try visiting http://localhost:3000 after starting the server.
+
 # Description:
 
 This is a project that I created during my studies at NAIT. Our task was to
