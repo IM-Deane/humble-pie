@@ -4,7 +4,7 @@
 
 Currently hosted at: https://humble-pie.herokuapp.com/
 
-# Note: If no environmental PORT is supplied, the server will attempt to run the app on port 3000. For those that are new, to run the project locally, please try visiting http://localhost:3000 after starting the server.
+Note: If no environmental PORT is supplied, the server will attempt to run the app on port 3000. For those that are new, to run the project locally, please try visiting http://localhost:3000 after starting the server.
 
 # Description:
 
